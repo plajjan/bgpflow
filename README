@@ -1,0 +1,12 @@
+This is a hack to use flowd and pybgp to collect netflow info and add BGP info
+to it.
+
+There is some code to do SNMP requests too, mainly to get interface
+information, but it's far from complete.
+
+The general concept would be to insert it into a postgresql database and then
+use SQL queries to aggregate and refine the information further. No functions
+to refine data are integrated into this.
+
+I am currently uncertain whether to proceed with this project or focus my
+efforts on pmacct instead.
